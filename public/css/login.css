@@ -1,0 +1,35 @@
+/* #################################### LOGIN ################################## */
+
+#log_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 15%;
+    min-width: 300px;
+    height: auto;
+    background-color: white;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+#log_form > input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+#log_form > span {
+    text-align: center;
+}
+
+#log_form > button {
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    background-color: var(--nav-color);
+}
+
+#log_form > button:hover {
+    cursor: pointer;
+}
