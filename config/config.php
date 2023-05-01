@@ -9,12 +9,12 @@ if (!defined('ROOT_PATH')) {
     define('ROOT_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 }
 
-if (!defined('ABS_PATH')) {
-    define('ABS_PATH', DIRECTORY_SEPARATOR . 'MagicStore' . DIRECTORY_SEPARATOR);
+if (!defined('REL_PATH')) {
+    define('REL_PATH', DIRECTORY_SEPARATOR . 'MagicStore' . DIRECTORY_SEPARATOR);
 }
 
 if (!defined('PUBLIC_PATH')) {
-    define('PUBLIC_PATH', ABS_PATH . 'public' . DIRECTORY_SEPARATOR);
+    define('PUBLIC_PATH', REL_PATH . 'public' . DIRECTORY_SEPARATOR);
 }
 
 if (!defined('CSS_DIRECTORY')) {
@@ -24,3 +24,13 @@ if (!defined('CSS_DIRECTORY')) {
 if (!defined('ASSETS_DIRECTORY')) {
     define('ASSETS_DIRECTORY', CSS_DIRECTORY . 'assets' . DIRECTORY_SEPARATOR);
 }
+
+if (!defined('JS_DIRECTORY')) {
+    define('JS_DIRECTORY', PUBLIC_PATH . 'js' . DIRECTORY_SEPARATOR);
+}
+
+// JS DIRECTORY ABSOLUTE PATH
+if (!defined('JS_DIRECTORY_ABSOLUTE')) {
+    define('JS_DIRECTORY_ABSOLUTE', ROOT_PATH . 'public' . DIRECTORY_SEPARATOR . 'js' . DIRECTORY_SEPARATOR);
+}
+

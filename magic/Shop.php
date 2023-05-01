@@ -20,6 +20,7 @@ class Shop {
                 <div class="card_footer">
                     <legend><?= $card['name']?></legend>
                     <input class="card_checkbox" type="checkbox">
+                    <input type="hidden" name="id" value="<?= $card['id'] ?>">
                 </div>
             </div>
             <?php

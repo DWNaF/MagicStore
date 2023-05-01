@@ -5,7 +5,10 @@ $shop = new Shop();
 ?>
 
 <div id="main_content">
-    <h1>Magic cards</h1>
+    <div id="header_content">
+        <p>Selection : <span id="card_selection_nb">none</span></p>
+        <button id="add_cart_btn" disabled>Add to cart !</button>
+    </div>
     <?php $shop->generateShop(); ?>
 </div>
 

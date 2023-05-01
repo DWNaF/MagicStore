@@ -14,7 +14,7 @@ class Template
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-            <link rel="icon" href="/tp4/style/assets/MagicLogo4.png" />
+            <link rel="icon" href="<?= CSS_DIRECTORY?>assets/MagicLogo4.png" />
             <link rel="stylesheet" type='text/css' href="<?= CSS_DIRECTORY ?>template.css">
             <link rel="stylesheet" type='text/css' href="<?= CSS_DIRECTORY ?>style.css">
             <link rel="stylesheet" type='text/css' href="<?= CSS_DIRECTORY . $page ?>.css">
@@ -38,7 +38,11 @@ class Template
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-
+            <?php 
+                if (file_exists(JS_DIRECTORY_ABSOLUTE . $page . '.js')) {
+                    echo '<script src="' . JS_DIRECTORY. $page . '.js"></script>';
+                }
+            ?>
         </body>
 
         </html>

@@ -7,7 +7,7 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
 <header>
     <nav id="test" class="flex">
         <div class="nav_left">
-            <a href="<?= ABS_PATH . 'index.php' ?>">
+            <a href="<?= REL_PATH . 'index.php' ?>">
                 <h2>Magic Store</h2>
             </a>
             <?php

@@ -24,15 +24,15 @@ if (!isset($_SESSION["login"])) {
             $granted = Logger::log($_POST["login"], $_POST["password"]);
             if ($granted) {
                 $_SESSION["login"] = $_POST["login"];
-                header("Location: " . ABS_PATH . 'index.php');
+                header("Location: " . REL_PATH . 'index.php');
             }
         } else {
             // Le jeton CSRF est invalide
-            header("Location: " . ABS_PATH . 'index.php');
+            header("Location: " . REL_PATH . 'index.php');
         }
     }
 } else {
-    header("Location: " . ABS_PATH . 'index.php');
+    header("Location: " . REL_PATH . 'index.php');
     exit();
 }
 
