@@ -10,7 +10,7 @@ if (!defined('ROOT_PATH')) {
 }
 
 if (!defined('REL_PATH')) {
-    define('REL_PATH', DIRECTORY_SEPARATOR . 'MagicStore' . DIRECTORY_SEPARATOR);
+    define('REL_PATH', DIRECTORY_SEPARATOR . basename(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR);
 }
 
 if (!defined('PUBLIC_PATH')) {
